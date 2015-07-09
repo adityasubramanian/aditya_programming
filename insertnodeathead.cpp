@@ -9,6 +9,10 @@
   }
 return back the pointer to the head of the linked list in the below method.
 */
+struct Node {
+     int data;
+     struct Node *next;
+}
 Node* Insert(Node *head,int data)
 {
   Node* current = new Node; 
