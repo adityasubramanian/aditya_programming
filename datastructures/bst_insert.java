@@ -6,8 +6,7 @@
     
     */
 
-static Node Insert(Node root,int value)
-    {
+static Node Insert(Node root,int value) {
         if (root == null) {
             Node temp = new Node(); 
             temp.data = value; 
@@ -20,5 +19,5 @@ static Node Insert(Node root,int value)
             root.right = Node.Insert(root.right,value); 
         }
        return root; 
-    }
+} 
 
