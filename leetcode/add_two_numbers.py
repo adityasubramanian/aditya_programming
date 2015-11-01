@@ -12,8 +12,8 @@ class Solution(object):
         :rtype: ListNode
         """
         if (l1 or l2) is None:
-            return l1 if l2 is None
-        return l2
+            return l2 if l1 is None
+        return l1
         placement = ListNode(0) 
         while (l1 and l2) is not None: 
             placement.next = ListNodE((l1.val+l2.val) 
