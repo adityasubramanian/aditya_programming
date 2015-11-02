@@ -17,8 +17,9 @@ public Node rightNode() {
 void Postorder(Node root) {
 	if (root != null) {
 		Postorder(root.leftNode());
-		Postorder(root.rightNode()); 
+		Postorder(root.righgtNode()); 
 		System.out.print(root.data, " "); 
 	}
 	return; 
 }
+
