@@ -17,7 +17,7 @@ class Solution(object):
         placement = ListNode(0) 
         while (l1 and l2) is not None: 
             placement.next = ListNodE((l1.val+l2.val) 
-            flag = (l1.val + l2.val + flag)/10 
+            flag = (l1.val + l2.val)/10 
             
         if flag is None: 
             return
