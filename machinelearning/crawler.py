@@ -1,11 +1,4 @@
 #!/usr/bin/env python
-
-"""Web Crawler/Spider
-This module implements a web crawler. This is very _basic_ only
-and needs to be extended to do anything usefull with the
-traversed pages.
-"""
-
 import re
 import sys
 import time
@@ -16,7 +9,6 @@ import optparse
 from cgi import escape
 from traceback import format_exc
 from Queue import Queue, Empty as QueueEmpty
-
 from BeautifulSoup import BeautifulSoup
 
 __version__ = "0.2"
