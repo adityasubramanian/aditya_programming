@@ -1,4 +1,3 @@
-//package Question1_3;
 public class Question {	
 	public static String sort(String s) {
 		char[] content = s.toCharArray();
