@@ -19,3 +19,5 @@ class Solution(object):
             placement.next = ListNodE((l1.val+l2.val) 
             flag = (l1.val + l2.val + flag)/10 
             
+        if flag is None: 
+            return
