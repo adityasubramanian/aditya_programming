@@ -3,13 +3,10 @@ public void reverse(char [] str) {
 	int j = str.length - 1; 
 
 	while (i < j) {
-		swap(str, i,j); 
+		char temp = str[i]; 
+		str[i] = str[j]; 
 		i++; 
+		str[j] = str[temp];
 		j--; 
 	}
-}
-public void swap(char[] str, i, j) {
-	char temp = str[i]; 
-	str[i] = str[j]; 
-	str[j] = str[temp]; 
 }
