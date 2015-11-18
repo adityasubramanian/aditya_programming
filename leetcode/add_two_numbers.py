@@ -12,7 +12,7 @@ class Solution(object):
         :rtype: ListNode
         """
 
-########### Not completed 
+########### Not finished. 
 
 
 
