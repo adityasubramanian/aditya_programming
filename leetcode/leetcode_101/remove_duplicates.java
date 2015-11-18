@@ -2,12 +2,14 @@
 Return the new *length* of the new array after removing all duplicates. 
 **/ 
 public int removeDuplicates(int [] nums) {
-	int i = 0; 				// Declare a point to start iterating through. 
-	for (int j = 0; j < nums.length; j++) {		//Reach length of input.  
-		if (nums[j] != nums[i]) {				// 
-			i++; 
-			nums[i] = nums[j]; 
+	if (nums.length == 0) { return 0; }
+	if (nums.length == 1) { return 1; }
+	int compare_to = 0; 
+	for (int i = 0; i < nums.length; i++) {
+		if (nums[compare_to] != nums[i]) {
+			compare_to++; 
+			nums[compare_to] = nums[i]
 		}
 	}
-	return i+1; 
+	return compare_to+1; 
 }
