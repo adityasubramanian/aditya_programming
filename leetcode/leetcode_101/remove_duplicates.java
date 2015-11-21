@@ -1,5 +1,5 @@
 /**
-Return the new *length* of the new array after removing all duplicates. 
+*Return the new *length* of the new array after removing all duplicates. 
 **/ 
 public int removeDuplicates(int [] nums) {
 	if (nums.length == 0) { return 0; }
