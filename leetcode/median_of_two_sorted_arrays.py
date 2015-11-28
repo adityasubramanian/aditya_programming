@@ -10,7 +10,8 @@ class Solution(object):
 
 
 	def findMedianSortedArrays(self, nums1, nums2):
-
+		if ((len(nums1) + len(nums2)) %2 is 1): 
+			 
 
 
 
@@ -22,3 +23,7 @@ class Solution(object):
         if (median is 1):
             return min(nums1[1],nums2[1]) 
         PA = min(median/2, len(nums1))
+        PB = median - PA 
+        if (nums1[PA-1] <= nums2[PB-1]):
+        	return self.findMedian(nums1[PA:], nums2, median - PA)
+		return self.getMedian(nums1, nums2[PB:], median - PB)
