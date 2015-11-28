@@ -29,4 +29,6 @@ class Solution(object):
             while dequeue and nums[dequeue[-1]] <= nums[i]:
                 dequeue.pop()
             dequeue.append(i)
-        
+            if dequeue[0] == i - k:
+
+
