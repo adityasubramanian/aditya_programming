@@ -23,12 +23,15 @@ class Solution(object):
         :type k: int
         :rtype: List[int]
         """
-        dequeue = collections.deque()
-        ans = []
-        for i in range(len(nums)):
-            while dequeue and nums[dequeue[-1]] <= nums[i]:
-                dequeue.pop()
-            dequeue.append(i)
+        dequeue = collections.deque() 
+        output = [] 
+        for i xrange(len(nums)): 
+            while dequeue and nums[dequeue[-1]] <= nums[i]: 
+                dequeue.pop() 
+            dequeue.append(i)            
             if dequeue[0] == i - k:
-
+                dequeue.popleft() 
+            if i >= k -1: 
+                output.append(dequeue[0])
+        return output 
 
