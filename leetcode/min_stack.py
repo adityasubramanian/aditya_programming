@@ -31,7 +31,7 @@ class MinStack(object):
         """
         :rtype: nothing
         """
-        top_value = self.stack[-1]
+        top_value = self.stack1[-1]
         self.stack1.pop()
         if top_value is self.stack2[-1]:
             self.stack2.pop()
