@@ -22,23 +22,30 @@ class MinStack(object):
         :type x: int
         :rtype: nothing
         """
-        self.stack.append(x)
-        if (len(self.stack2 is 0) or (x < self.stack2[-1])):
+        self.stack1.append(x)
+
+        if len((self.stack2) is None) or (x < self.stack2[-1]):
             self.stack2.append(x)
 
     def pop(self):
         """
         :rtype: nothing
         """
-        top = self.stack1[-1]
+        top_value = self.stack[-1]
+        self.stack1.pop()
+        if top_value is self.stack2[-1]:
+            self.stack2.pop()
 
     def top(self):
         """
         :rtype: int
         """
+        return self.stack1[-1]
 
 
     def getMin(self):
         """
         :rtype: int
         """
+        ## Minimum value since located at the top of stack2.
+        return self.stack2[-1]
