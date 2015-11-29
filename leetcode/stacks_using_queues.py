@@ -23,6 +23,7 @@ class Stack(object):
         :type x: int
         :rtype: nothing
         """
+        self.stack.append(x)
 
 
     def pop(self):
