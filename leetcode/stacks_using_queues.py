@@ -16,27 +16,32 @@ class Stack(object):
         """
         initialize your data structure here.
         """
-        self.stack = []
+        self.queue = []
 
     def push(self, x):
         """
         :type x: int
         :rtype: nothing
         """
-        self.stack.append(x)
-
+        self.queue.append(x)
 
     def pop(self):
         """
         :rtype: nothing
         """
-
+        for x in range(len(self.queue)-1):
+            self.queue.append(self.queue.pop(0)) # Pop's the top most element.
+        self.queue.pop(0)
 
     def top(self):
         """
         :rtype: int
         """
-
+        top = None
+        for x in range(len(self.queue)):
+            top = self.queue.pop()
+            self.queue.append(top)
+        return top
 
     def empty(self):
         """
