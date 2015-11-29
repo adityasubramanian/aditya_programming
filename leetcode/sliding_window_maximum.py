@@ -16,6 +16,7 @@ Window position                Max
 Therefore, return the max sliding window as [3,3,5,5,6,7].
 '''
 
+import collections
 class Solution(object):
     def maxSlidingWindow(self, nums, k):
         """
@@ -23,15 +24,14 @@ class Solution(object):
         :type k: int
         :rtype: List[int]
         """
-        dequeue = collections.deque() 
+        dq = collections.deque()
         output = [] 
         for i xrange(len(nums)): 
-            while dequeue and nums[dequeue[-1]] <= nums[i]: 
-                dequeue.pop() 
-            dequeue.append(i)            
-            if dequeue[0] == i - k:
-                dequeue.popleft() 
+            while dq and nums[dq[-1]] <= nums[i]:
+                dq.pop()
+            dq.append(i)
+            if dq[0] == i - k:
+                dq.popleft()
             if i >= k -1: 
-                output.append(dequeue[0])
+                output.append(dq[0])
         return output 
-
