@@ -29,7 +29,7 @@ class Stack(object):
         """
         :rtype: nothing
         """
-        for x in range(len(self.queue)-1):
+        for x in (1,len(self.queue)):
             self.queue.append(self.queue.pop(0)) # Pop's the top most element.
         self.queue.pop(0)
 
@@ -47,3 +47,4 @@ class Stack(object):
         """
         :rtype: bool
         """
+        return self.queue is None
