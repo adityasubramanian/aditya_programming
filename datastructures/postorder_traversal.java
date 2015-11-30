@@ -14,6 +14,7 @@ public Node leftNode() {
 public Node rightNode() {
 	return right; 
 }
+
 void Postorder(Node root) {
 	if (root != null) {
 		Postorder(root.leftNode());
