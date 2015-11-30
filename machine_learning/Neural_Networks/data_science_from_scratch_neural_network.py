@@ -1,32 +1,37 @@
 from __future__ import division
 from collections import Counter
 from functools import partial
-from linear_algebra import dot
+#from linear_algebra import dot
 import math, random
 import matplotlib
 import matplotlib.pyplot as plt
 
+def dot(v, w):              # Create a function to describe the dot product of two matrices.
+    """v_1 * w_1 + ... + v_n * w_n"""
+    # for v_i, w_i in zip(v,w):
+    #     return sum(v_i * w_i)
+    return sum(v_i * w_i for v_i, w_i in zip(v, w))
+
 def step_function(x):
-    return 1 if x >= 0 else 0
+    return 0 if x < 0 else 1
 
 def perceptron_output(weights, bias, x):
     """returns 1 if the perceptron 'fires', 0 if not"""
-    return step_function(dot(weights, x) + bias)
+    weight_assignment = dot(weights,x) # Multiple weights with nodes to created weighted representation.
+    return step_function(weight_assignment + bias)
 
 def sigmoid(t):
     return 1 / (1 + math.exp(-t))
-    
-def neuron_output(weights, inputs):
-    return sigmoid(dot(weights, inputs))
+
+def neuron_output(weights,inputs):
+    return sigmoid(dot(weights,inputs))
 
 def feed_forward(neural_network, input_vector):
     """takes in a neural network (represented as a list of lists of lists of weights)
     and returns the output from forward-propagating the input"""
 
     outputs = []
-
     for layer in neural_network:
-
         input_with_bias = input_vector + [1]             # add a bias input
         output = [neuron_output(neuron, input_with_bias) # compute the output
                   for neuron in layer]                   # for this layer
@@ -54,7 +59,7 @@ def backpropagate(network, input_vector, target):
     hidden_deltas = [hidden_output * (1 - hidden_output) * 
                       dot(output_deltas, [n[i] for n in network[-1]]) 
                      for i, hidden_output in enumerate(hidden_outputs)]
-
+    
     # adjust weights for hidden layer (network[0])
     for i, hidden_neuron in enumerate(network[0]):
         for j, input in enumerate(input_vector + [1]):
