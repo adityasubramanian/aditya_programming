@@ -59,7 +59,7 @@ def backpropagate(network, input_vector, target):
     hidden_deltas = [hidden_output * (1 - hidden_output) * 
                       dot(output_deltas, [n[i] for n in network[-1]]) 
                      for i, hidden_output in enumerate(hidden_outputs)]
-    
+
     # adjust weights for hidden layer (network[0])
     for i, hidden_neuron in enumerate(network[0]):
         for j, input in enumerate(input_vector + [1]):
