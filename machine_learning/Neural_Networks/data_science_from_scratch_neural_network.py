@@ -11,6 +11,7 @@ def dot(v, w):              # Create a function to describe the dot product of t
     # for v_i, w_i in zip(v,w):
     #     return sum(v_i * w_i)
     return sum(v_i * w_i for v_i, w_i in zip(v, w))
+
 def step_function(x):
     return 0 if x < 0 else 1
 
