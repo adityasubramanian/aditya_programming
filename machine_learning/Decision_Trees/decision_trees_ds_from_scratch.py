@@ -4,7 +4,6 @@ from functools import partial
 import math, random
 
 def entropy(class_probabilities):
-    """given a list of class probabilities, compute the entropy"""
     return sum(-p * math.log(p, 2) for p in class_probabilities if p)
 
 def class_probabilities(labels):
