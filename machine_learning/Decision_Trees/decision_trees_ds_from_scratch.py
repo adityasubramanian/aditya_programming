@@ -10,8 +10,7 @@ def class_probabilities(labels):
     total_count = len(labels)
     return [count / total_count
             for count in Counter(labels).values()]
-
-def data_entropy(labeled_data):        
+def data_entropy(labeled_data):
     labels = [label for _, label in labeled_data]
     probabilities = class_probabilities(labels)
     return entropy(probabilities)
