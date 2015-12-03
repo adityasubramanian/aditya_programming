@@ -25,12 +25,6 @@ class Solution(object):
         :rtype: List[int]
         """
         dq = collections.deque()
-
-        for i in xrange(len(nums)):
-            while dq and nums[dq[-1]] <= 
-
-
-        dq = collections.deque()
         output = []
         for i xrange(len(nums)): 
             while dq and nums[dq[-1]] <= nums[i]:
