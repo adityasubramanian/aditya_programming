@@ -25,7 +25,13 @@ class Solution(object):
         :rtype: List[int]
         """
         dq = collections.deque()
-        output = [] 
+
+        for i in xrange(len(nums)):
+            while dq and nums[dq[-1]] <= 
+
+
+        dq = collections.deque()
+        output = []
         for i xrange(len(nums)): 
             while dq and nums[dq[-1]] <= nums[i]:
                 dq.pop()
@@ -34,4 +40,5 @@ class Solution(object):
                 dq.popleft()
             if i >= k -1: 
                 output.append(dq[0])
-        return output 
+        return output
+
