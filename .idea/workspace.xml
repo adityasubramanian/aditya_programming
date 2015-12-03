@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="07bf5c7c-8df9-437f-9e44-d669e3c92029" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/leetcode/sliding_window_maximum.py" afterPath="$PROJECT_DIR$/leetcode/sliding_window_maximum.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="07bf5c7c-8df9-437f-9e44-d669e3c92029" name="Default" comment="" />
     <ignored path="programming_practice.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -153,7 +150,7 @@
     <order />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-1333" />
+    <option name="x" value="33" />
     <option name="y" value="-4" />
     <option name="width" value="1333" />
     <option name="height" value="772" />
@@ -604,7 +601,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1333" y="-4" width="1333" height="772" extended-state="6" />
+    <frame x="33" y="-4" width="1333" height="772" extended-state="6" />
     <editor active="false" />
     <layout>
       <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.30246913" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
