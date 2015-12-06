@@ -19,7 +19,7 @@ class Solution(object):
         """
         # if len(s) is 1:
         # 	return len(s)
-   		if s.split() != []:
+   		if s.split() is not []:
    			return len(s.split()[len(s.split())-1])
    		return 0
 
