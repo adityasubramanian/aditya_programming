@@ -10,15 +10,20 @@ class Solution(object):
         :type head: ListNode
         :rtype: ListNode
         """
-        length = 0
-        cur = head
+        length = 0 
+        cur = head 
         while cur != None: 
-            length += 1
             cur = cur.next
+            length += 1 
         return self.mergeSort(head,length)
+
     def MergeSort(self,head,length):
-        if length == 1 or length ==0:
+        if length == 1 or length ==0: 
             return head
         prev = curr = head 
         for i in xrange(length/2): 
             curr = curr.next
+
+
+            
+        
