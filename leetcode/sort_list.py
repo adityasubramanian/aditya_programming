@@ -22,3 +22,4 @@ class Solution(object):
         prev = curr = head 
         for i in xrange(length/2): 
             curr = curr.next
+        #Not finished 
