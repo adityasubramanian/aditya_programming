@@ -1,0 +1,2 @@
+drwxr-xr-x   3 adityasubramanian  staff  102 Nov 28 13:55 python
+drwxr-xr-x   3 adityasubramanian  staff  102 Nov 28 13:55 scrapy

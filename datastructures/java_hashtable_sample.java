@@ -25,7 +25,7 @@ public class HashTableDemo {
       System.out.println();
       // Deposit 1,000 into Zara's account
       bal = ((Double)balance.get("Zara")).doubleValue();
-      balance.put("Zara", new Double(bal+1000));
+      balance.put("Zara", new Double(bal+2000));
       System.out.println("Zara's new balance: " +
       balance.get("Zara"));
    }
