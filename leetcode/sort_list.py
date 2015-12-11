@@ -23,11 +23,4 @@ class Solution(object):
         prev = curr = head 
         for i in xrange(length/2): 
             curr = curr.next
-<<<<<<< HEAD
-
-
-            
-        
-=======
-        #Not finished 
->>>>>>> 6601d951e0e97bee5c8fe6bcca5083a6f39ef9d4
+    
