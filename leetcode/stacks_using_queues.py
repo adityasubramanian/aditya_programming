@@ -48,3 +48,7 @@ class Stack(object):
         :rtype: bool
         """
         return self.queue is None
+
+
+
+
