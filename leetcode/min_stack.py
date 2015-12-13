@@ -42,6 +42,8 @@ class MinStack(object):
         """
         return self.stack1[-1]
 
+    def bottom(self):
+        return self.stack1[1]
 
     def getMin(self):
         """

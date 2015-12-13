@@ -5,7 +5,7 @@ There are two sorted arrays nums1 and nums2 of size m and n respectively. Find t
 :type nums2: List[int]
 :rtype: float
 """
-        
+
 class Solution(object):
 	def findMedianSortedArrays(self, nums1, nums2):
 		if ((len(nums1) + len(nums2)) %2 is 1): 
