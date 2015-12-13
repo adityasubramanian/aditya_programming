@@ -23,4 +23,3 @@ class Solution(object):
         PB = median - PA 
         if (nums1[PA-1] <= nums2[PB-1]):
         	return self.findMedian(nums1[PA:], nums2, median - PA)
-		return self.getMedian(nums1, nums2[PB:], median - PB)
