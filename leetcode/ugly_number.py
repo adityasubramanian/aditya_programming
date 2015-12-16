@@ -13,5 +13,9 @@ class Solution(object):
         :type num: int
         :rtype: bool
         """
-        if (num is 
-
+        if num > 0: 
+            for number in [2,3,5]:
+                while num % number == 0: 
+                    num /= number
+            return num == 1 
+        return False 
