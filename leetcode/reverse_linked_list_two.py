@@ -25,19 +25,18 @@ class Solution(object):
         :type n: int
         :rtype: ListNode
         """
-    	if head is None or head.next is None: 
-    		return head
-    	dummy  = ListNode(0) 
-    	dummy.next = head
-    	head1 = dummy
-    	for i in range(m-1):
-    		head1 = head1.next
-    	p = head1.next
-    	for i in range(n-m):
-    		tmp = head1.next
-    		head1.next = p.next
-    		p.next = p.next.next
-    		head1.next.next = tmp
-    	return dummy.next
-
+    	if head is not None or head.next is not None: 
+	       	dummy  = ListNode(0) 
+	    	dummy.next = head
+	    	head1 = dummy
+	    	for i in range(m-1):
+	    		head1 = head1.next
+	    	p = head1.next
+	    	for i in range(n-m):
+	    		tmp = head1.next
+	    		head1.next = p.next
+	    		p.next = p.next.next
+	    		head1.next.next = tmp
+	    	return dummy.next
+	    return head 
 
