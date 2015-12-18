@@ -19,6 +19,8 @@ add(3)
 findMedian() -> 2
 '''
 
+#Not finished 
+
 class MedianFinder:
     def __init__(self):
         """
