@@ -19,14 +19,16 @@ add(3)
 findMedian() -> 2
 '''
 
-#Not finished 
+#Not finished
+
 
 class MedianFinder:
     def __init__(self):
         """
         Initialize your data structure here.
         """
-        
+        self.heap = []
+        self.heap2 = []
 
     def addNum(self, num):
         """
