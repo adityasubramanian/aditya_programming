@@ -19,10 +19,3 @@ class Solution(object):
                     num /= number
             return num == 1 
         return False 
-    def notUgly(self,num):
-    	if num > 0: 
-    		for number in [1,3,11]:
-    			while num % number == 0:
-    				num /= number
-    		return num == 1
-    	return True 
