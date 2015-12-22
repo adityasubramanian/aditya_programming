@@ -10,7 +10,7 @@ import numpy as np
 import theano
 import theano.tensor as T
 
-#import network3
+import network3
 #from network3 import sigmoid, tanh, ReLU, Network
 #from network3 import ConvPoolLayer, FullyConnectedLayer, SoftmaxLayer
 
