@@ -10,3 +10,4 @@ class Solution(object):
         """
         return int(math.sqrt(n))
         # only affects even, as two odd rounds would leave leftover to even
+
