@@ -27,8 +27,8 @@ class MedianFinder:
         """
         Initialize your data structure here.
         """
-        self.minHeap = []
-        self.maxHeap = []
+        self.firstHeap = []
+        self.secondHeap = []
 
     def addNum(self, num):
         """
@@ -36,9 +36,17 @@ class MedianFinder:
         :type num: int
         :rtype: void
         """
-        heappush(self.maxHeap, -num)
-        minTop = self.minHeap[0] if len(self.minHeap) else None
-        maxTop = self.maxHeap[0] if len(self.maxHeap) else None
+        heappush(self.secondHeap, -num)
+
+        if len(self.minHeap):
+            minTop = self.firstHeap[0]
+        else:
+            minTop = None
+        if len(self.maxHeap):
+            maxTop = self.secondHeap[0]
+        else:
+            maxTop = None
+
         if minTop < -maxTop or len(self.minHeap) + 1 < len(self.maxHeap):
             heappush(self.minHeap, -heappop(self.maxHeap))
         if len(self.maxHeap) < len(self.minHeap):

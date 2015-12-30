@@ -16,6 +16,7 @@ Window position                Max
 Therefore, return the max sliding window as [3,3,5,5,6,7].
 '''
 
+
 import collections
 class Solution(object):
     def maxSlidingWindow(self, nums, k):
