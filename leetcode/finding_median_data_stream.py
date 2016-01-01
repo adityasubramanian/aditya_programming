@@ -49,6 +49,7 @@ class MedianFinder:
 
         if minTop < -maxTop or len(self.minHeap) + 1 < len(self.maxHeap):
             heappush(self.minHeap, -heappop(self.maxHeap))
+            
         if len(self.maxHeap) < len(self.minHeap):
             heappush(self.maxHeap, -heappop(self.minHeap))
 
