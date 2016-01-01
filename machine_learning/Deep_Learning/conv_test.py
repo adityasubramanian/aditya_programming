@@ -10,9 +10,9 @@ import numpy as np
 import theano
 import theano.tensor as T
 
-#import network3
-#from network3 import sigmoid, tanh, ReLU, Network
-#from network3 import ConvPoolLayer, FullyConnectedLayer, SoftmaxLayer
+import network3
+from network3 import sigmoid, tanh, ReLU, Network
+from network3 import ConvPoolLayer, FullyConnectedLayer, SoftmaxLayer
 
 training_data, validation_data, test_data = network3.load_data_shared()
 mini_batch_size = 10
