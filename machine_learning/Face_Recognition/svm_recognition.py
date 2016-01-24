@@ -111,7 +111,6 @@ def plot_gallery(images, titles, h, w, n_row=3, n_col=4):
         plt.xticks(())
         plt.yticks(())
 
-
 # plot the result of the prediction on a portion of the test set
 
 def title(y_pred, y_test, target_names, i):
