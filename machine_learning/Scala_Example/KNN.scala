@@ -29,6 +29,10 @@ trait CartesianN[Data] extends Distance[Data, Product] {
     sqrt(numeric.toDouble(diffs.sum))
   }
 }
+trait regularDifference[Data] extends Distance[Data,Product] {
+    def distance(d1:Product, d2:Product)(implicit numeric: Numeric[Data]) = 
+      sqrt(numeric.toList(numeric.plus))
+}
 
 /**
  * k-NN algorithm. It classify a sample, given a dataset of known elements
