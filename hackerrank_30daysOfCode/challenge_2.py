@@ -5,3 +5,5 @@ tip = int(input())
 tax = int(input())
 final = meal +((tip * meal)/100) + ((tax * meal)/100)
 print ('The final price of the meal is ${}.'.format(int(round(final,0))))
+
+
