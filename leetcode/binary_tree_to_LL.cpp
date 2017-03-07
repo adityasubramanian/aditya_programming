@@ -15,7 +15,7 @@ class Solution {
             } else {
                 while (root != NULL){ // keep checking if the root is not null, because we re-assign the root. 
                     if (root->left != NULL){
-                        TreeNode* temp=root->left;
+                        TreeNode* temp=root->left; // fetch left most element. 
                         while (temp->right != NULL) {
                             temp = temp->right;
                         }
